@@ -1,0 +1,116 @@
+@import url("./preset.less");
+@import url("./mix.less");
+
+.app-container {
+  background-color: @ksd_ref_lm-bg-rear;
+  height: 100%;
+  overflow: scroll;
+  width: 100%;
+  .ksd_sys_block;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  -ms-overflow-style: none;  /* IE and Edge */
+  padding: 0;
+  scrollbar-width: none; /* Firefox */
+}
+
+//scroll bar design ****************************
+::-webkit-scrollbar {
+  display: none;
+}
+
+//slection
+::selection{
+  background-color: @ksd_ref_lm-green;
+  color: @ksd_ref_low-white;
+}
+//Initialization the html fontsize-----
+html {
+  font-size: 13px;
+  height: 100%;
+}
+
+#disabled-btn{
+  opacity: .53;
+}
+
+/* =================================== MEDIA QUEERY ======================================= */
+
+// width betwwen 450px and 550px
+
+@media (min-width: 450px) and (max-width: 550px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+// width betwwen 550px and 650px
+
+@media (min-width: 550px) and (max-width: 650px) {
+  html {
+    font-size: 16px;
+  }
+}
+// width betwwen 650px and 750px
+
+@media (min-width: 650px) and (max-width: 750px) {
+  html {
+    font-size: 17px;
+  }
+}
+
+// width betwwen 750px and 950px
+
+@media (min-width: 750px) and (max-width: 950px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+// width betwwen 950 px and 1180px
+
+@media (min-width: 950px) and (max-width: 1180px) {
+  html {
+    font-size: 23px;
+  }
+}
+// width betwwen 1180px  and 1366px
+
+@media (min-width: 1180px) and (max-width: 1366px) {
+  html {
+    font-size: 24px;
+  }
+}
+// width betwwen 1366px and 1400px
+
+@media (min-width: 1366px) and (max-width: 1400px) {
+  html {
+    font-size: 25px;
+  }
+}
+
+// width betwwen 1400 px and 1500px
+
+@media (min-width: 1400px) and (max-width: 1500px) {
+  html {
+    font-size: 26px;
+  }
+}
+
+// width betwwen 1500px and 1600px
+
+@media (min-width: 1500px) and (max-width: 1600px) {
+  html {
+    font-size: 27px;
+  }
+}
+// width more than 1600
+
+@media (min-width: 1600px) {
+  html {
+    font-size: 29px;
+  }
+}

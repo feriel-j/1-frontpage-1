@@ -1,0 +1,76 @@
+@import url("./preset.less");
+@import url("./mix.less");
+//the contact details container-------------------
+.contact-details-container {
+  background-color: transparent;
+  gap: 7vw;
+  padding-inline: 5%;
+  width: 100%;
+  .ksd_sys_flex-box-AI-stretch-JC-space-between;
+  // the contact details commun box-----------------
+  .contact-details-box {
+    background-color: transparent;
+    flex-direction: column;
+    gap: 3vw;
+    min-width: 31%;
+    padding: 2%;
+    text-align: center;
+    .ksd_sys_flex-box-AI-centred-JC-space-between;
+    // the headers of the contact details box-----------
+    h3 {
+      color: @ksd_ref_lm-elements;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      width: 100%;
+      .montserrat-modest-medium;
+    }
+    // contact details-----------------------------------
+    h4 {
+      color: @ksd_ref_lm-elements;
+      width: 100%;
+      .montserrat-fine-regular;
+    }
+    //contact links container----------------------------
+    .contact-links-container {
+      gap: 3vw;
+      .ksd_sys_flex-box-centred;
+    }
+  }
+}
+
+//css proprieties for links --------------------
+a {
+  color: @ksd_ref_lm-elements;
+  text-decoration: none;
+}
+
+/* ==============================MEDIA QUERRY=================================== */
+
+//width more than 750px --------
+@media (min-width: 750px) {
+    .contact-details-container {
+        .contact-details-box {
+          gap: 2vw;
+  
+          h3 {
+            font-size: .9rem;
+          }
+  
+          h4 {
+            font-size: 0.7rem;
+          }
+  
+          .contact-links-container {
+            .contact-link-container {
+              svg {
+                font-size: .8rem;
+              }
+  
+              p {
+                font-size: 0.6rem;
+              }
+            }
+          }
+        }
+      }
+    }

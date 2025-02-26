@@ -1,0 +1,37 @@
+@import url("./preset.less");
+@import url("./mix.less");
+
+.sdgs-container {
+  background-color: transparent;
+  flex-direction: column;
+  gap: 2rem;
+  padding-inline: 2.5%;
+  width: 100%;
+  .ksd_sys_flex-box-AI-centred-JC-space-between;
+
+  .sgds-cards {
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    padding: 2.5%;
+    width: 100%;
+
+    .ksd_sys_flex-box-AI-stretch-JC-space-around;
+
+    .composed-card-container {
+      flex-basis: 73%;
+    }
+  }
+}
+
+/* ==============================MEDIA QUERRY=================================== */
+//width more than 740px --------
+@media (min-width: 740px) {
+  .sdgs-container {
+    .sgds-cards {
+      .composed-card-container {
+        flex-basis: 47%;
+      }
+    }
+  }
+}

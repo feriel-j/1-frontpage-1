@@ -1,0 +1,196 @@
+@import url("./preset.less");
+@import url("./mix.less");
+
+.hero-caroussel-container {
+  background-color: transparent;
+  height: 33dvh;
+  overflow: hidden;
+  width: 100%;
+
+  .carousel-view {
+    height: 100%;
+    position: relative;
+    width: 100%;
+
+    img {
+      background-attachment: fixed;
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    /* position of images in overlay section */
+    //first image--
+    .first-img {
+      object-position: center;
+    }
+    //second image---
+    .second-img {
+      object-position: 0% 79%;
+    }
+    // hide the caption----
+    figcaption {
+      display: none;
+    }
+  }
+  //the overlay section of the caroussel
+  .overlay-carousel {
+    background-color: @ksd_ref_kwk-bg-transparent;
+    border: @ksd_ref_lm-solid-border;
+    border-radius: @ksd_ref_border_radius_normal;
+    flex-direction: column;
+    gap: 1vw;
+    height: calc(100% - 6vw);
+    left: 3vw;
+    padding: 3%;
+    position: absolute;
+    top: 3vw;
+    width: calc(100% - 6vw);
+    // .ksd_sys_flex-box-centred;
+    .ksd_sys_flex-box-AI-centred-JC-space-evenly;
+    //the titeles sections
+    .carousel-titles {
+      color: @ksd_ref_lm-elements;
+      flex-direction: column;
+      text-align: center;
+      width: 100%;
+      .ksd_sys_flex-box-AI-centred-JC-space-between;
+      //the main title
+      .main-header-kwk {
+        .luna-moderate-regular;
+        color: @ksd_ref_lm-elements;
+        letter-spacing: 0.03em;
+        line-height: 1;
+      }
+      //the second title
+      h2 {
+        .shiporiMincho-modest-medium;
+        color: @ksd_ref_lm-elements;
+        letter-spacing: 0.03em;
+        line-height: 2;
+      }
+    }
+    //the descriptive title----
+    h3 {
+      .poppins-fine-medium;
+      color: @ksd_ref_lm-elements;
+      letter-spacing: 0.03rem;
+      line-height: 2;
+      margin-inline: auto;
+      text-align: center;
+      width: 83%;
+    }
+
+    .singup-btn {
+      font-size: 0.6rem;
+    }
+  }
+}
+
+/* ==============================MEDIA QUERRY=================================== */
+
+//width between 500px and 750px----
+@media (min-width: 500px) and (max-width: 750px) {
+  .hero-caroussel-container {
+    height: 43dvh;
+  }
+}
+//width between 750px and 1000px----
+@media (min-width: 750px) and (max-width: 1000px) {
+  .hero-caroussel-container {
+    height: 47dvh;
+     //the overlay section of the caroussel
+    .overlay-carousel {
+      //the titeles sections
+      .carousel-titles {
+        gap: 1.5vw;
+        //the main title
+        .main-header-kwk {
+          font-size: 2.3rem;
+        }
+        //the second title
+        h2 {
+          font-size: 1.2rem;
+          font-weight: @ksd_ref_font-weight-300;
+        }
+      }
+      //the descriptive title----
+      h3 {
+        font-size: 0.7rem;
+        font-weight: @ksd_ref_font-weight-400;
+        width: 73%;
+      }
+
+      .singup-btn {
+        border-radius: @ksd_ref_border_radius_normal;
+        font-size: 0.7rem;
+      }
+    }
+  }
+}
+//width more than 1000px --------
+@media (min-width: 1000px) {
+  .hero-caroussel-container {
+    height: 100dvh;
+
+    //the overlay section of the caroussel
+    .overlay-carousel {
+      //the titeles sections
+      .carousel-titles {
+        gap: 1.5vw;
+        //the main title
+        .main-header-kwk {
+          font-size: 2.5rem;
+        }
+        //the second title
+        h2 {
+          font-size: 1.2rem;
+          font-weight: @ksd_ref_font-weight-300;
+        }
+      }
+      //the descriptive title----
+      h3 {
+        font-size: 0.8rem;
+        font-weight: @ksd_ref_font-weight-400;
+        width: 73%;
+      }
+
+      .singup-btn {
+        border-radius: @ksd_ref_border_radius_normal;
+        font-size: 0.7rem;
+      }
+    }
+  }
+}
+
+//height less than 450px----
+
+@media (max-height: 450px) {
+  .hero-caroussel-container {
+    height: 100dvh;
+
+    .overlay-carousel {
+      //the titeles sections
+      .carousel-titles {
+        //the main title
+        .main-header-kwk {
+          font-size: 2rem;
+        }
+        //the second title
+        h2 {
+          font-size: 1rem;
+          font-weight: @ksd_ref_font-weight-300;
+        }
+      }
+      //the descriptive title----
+      h3 {
+        font-size: 0.6rem;
+      }
+
+      .singup-btn {
+        border-radius: @ksd_ref_border_radius_normal;
+        font-size: 0.6rem;
+      }
+    }
+  }
+}

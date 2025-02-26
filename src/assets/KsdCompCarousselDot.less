@@ -1,0 +1,29 @@
+@import url("./preset.less");
+@import url("./mix.less");
+
+//Dots of carousel styling------------------------
+.dots-container {
+  bottom: 1.25vw;
+  cursor: pointer;
+  gap: 1.3rem;
+  position: absolute;
+  width: 100%;
+  .ksd_sys_flex-box-centred;
+  //common dots-------------------
+  .dot-carousel {
+    background-color: @ksd_ref_dark-grey;
+    border-radius: @ksd_ref_border_radius_small;
+    box-shadow: @ksd_ref_card-dark-mode;
+    height: 3px;
+    width: 3.5rem;
+  }
+  //active dot-------------------
+  .active-dot {
+    background: @ksd_ref_dm-elements;
+  }
+}
+
+// The hidden dots id--
+#dots-hidden{
+display: none;
+}

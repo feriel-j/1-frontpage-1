@@ -1,0 +1,47 @@
+@import url("./preset.less");
+@import url("./mix.less");
+
+.message-container{
+    background-color: transparent;
+    color: @ksd_ref_lm-green;
+    gap:1vw;
+    letter-spacing: 0.03em;
+    line-height: 1.5;
+    text-align: center;
+    width: 100%;
+    .ksd_sys_flex-box-centred;
+    .poppins-standard-light;
+
+    .icon-confirm{
+        font-size: 1rem;
+    }
+}
+
+
+//success variant
+
+.message-success{
+    color: @ksd_ref_lm-green;
+
+    .icon-confirm{
+        color: @ksd_ref_lm-green;
+    }
+}
+
+//fail varian
+.message-fail{
+    color: @ksd_ref_lm-red;
+
+    .icon-confirm{
+        color: @ksd_ref_lm-red;
+    }
+}
+
+//warning variant
+.message-warning{
+    color: @ksd_ref_lm-orange;
+    
+    .icon-confirm{
+        color: @ksd_ref_lm-orange;
+    }
+}

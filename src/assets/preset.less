@@ -1,0 +1,218 @@
+@font-face {
+  font-family: "Lúna";
+  src: url("../../public/luna-regular-webfont.woff") format("woff");
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Waterfall&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=David+Libre&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=David+Libre:wght@400;500;700&family=Exo+2:ital,wght@0,900;1,900&display=swap');
+
+//---------------------------------------------------------------------------------------------------------------------------------//
+/*  
+    
+    Preset Index 
+    - Color styles
+    - Background
+    - Border
+    - Box-shadow
+    - Lines and radials
+    - Erathis
+    - KWK
+    - Typography 
+        - Font-families
+        -Font-weights
+    - Border-radius
+    
+
+//----------------------------------------------------------------------------------------------//
+/*--------------------------------------Color Styles------------------------------------------ */
+
+/* Main Colors*******************/
+
+/* Light mode*/
+
+@ksd_ref_lm-elements: #1c252e;
+@ksd_ref_lm-violet: #665775;
+@ksd_ref_lm-orange: #e6801a;
+@ksd_ref_lm-red: #cc3366;
+@ksd_ref_lm-green: #338080;
+
+/* Dark mode*/
+
+@ksd_ref_dm-elements: #e5f2ff;
+@ksd_ref_dm-violet: #e3ddf0;
+@ksd_ref_dm-orange: #e5ac73;
+@ksd_ref_dm-red: #f76e85;
+@ksd_ref_dm-green: #b3e5e5;
+
+/* Global Colors ***************/
+
+@ksd_ref_grey: #b7c5cc;
+@ksd_ref_dark-grey: #323b4d;
+@ksd_ref_pitch-black: #000000;
+@ksd_ref_transparent: #5a9d3f00;
+@ksd_ref_ignore-ia: #fafafa;
+
+//----------------------------------------------------------------------------------------------//
+/*-------------------------------------- Background ------------------------------------------ */
+
+/* Light mode */
+
+@ksd_ref_lm-bg-rear: #fffcf5;
+@ksd_ref_lm-bg-layer: #ffffff;
+
+/* Dark mode */
+
+@ksd_ref_dm-bg-rear: #171f26;
+@ksd_ref_dm-bg-layer: #1a2633;
+
+/* 3rd Layer and Non Colours Fillers */
+
+@ksd_ref_low-dark: #243342;
+@ksd_ref_low-white: #f9f9f9;
+
+//----------------------------------------------------------------------------------------------//
+/*---------------------------------------- Border----------------------------------------------*/
+
+/* Light mode */
+
+@ksd_ref_lm-solid-border-color: #f0e0c0;
+@ksd_ref_lm-solid-border:1px solid @ksd_ref_lm-solid-border-color;
+@ksd_ref_lm-radial-border:radial-gradient (98.69% 272.8% at 0.58% 99.27%, #F0E0C0 0%, #FFFCF5 49.39%, #F0E0C0 100%);
+
+/* Dark mode */
+
+@ksd_ref_dm-solid-border-color: #17181a;
+@ksd_ref_dm-solid-border:1px solid @ksd_ref_dm-solid-border-color;
+@ksd_ref_dm-radial-border:radial-gradient(98.69% 272.8% at 0.58% 99.27%, #323B4D 0%, #1A2633 49.39%, #323B4D 100%);
+@ksd_ref_kwk-lm-fp-title-line:linear-gradient(90deg, #1C252E 50.96%, rgba(255, 255, 255, 0.17) 74.91%, rgba(255, 255, 255, 0.00) 100%);
+//----------------------------------------------------------------------------------------------//
+/*---------------------------------------- Box-shadow ---------------------------------------- */
+
+/*------------------------------------------ Cards---------------------------------------*/
+
+@ksd_ref_card-vertical-shadow:-3px 5px 11px rgba(54, 67, 77, 0.2);
+@ksd_ref_card-dark-mode:0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+/*------------------------------------------ Bars ---------------------------------------*/
+
+@ksd_ref_bars-lower-shadow:0px 5px 10px rgba(57, 71, 81, 0.1);
+@ksd_ref_bars-upper-shadow:0px -5px 10px rgba(54, 67, 77, 0.2);
+@ksd_ref_drops-shadow:drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+/*---------------------------------------- Selected -------------------------------------*/
+
+/* Light mode */
+
+@ksd_ref_lm-selected:inset -3px 0px 0px #338080;
+
+/* Dark mode */
+
+@ksd_ref_dm-selected:inset -3px 0px 0px #B3E5E5;
+
+/*------------------------------------- Selected DB ------------------------------------*/
+
+@ksd_ref_selected-db:inset -3px 0px 0px #265973;
+
+/*----------------------------------- Inner Shadow ------------------------------------*/
+
+@ksd_ref_inner-shadow:inset 0px 5px 5px rgba(0, 0, 0, 0.43);
+
+//----------------------------------------------------------------------------------------------//
+/*------------------------------------- Lines and radials------------------------------------- */
+
+/*------------------------------------------ Radials---------------------------------------*/
+
+/* Light mode */
+@ksd_ref_lm-radial-iphpt:radial-gradient(77.33% 50% at 50% 50%, #E5F2FF 42.1%, #323B4D 99.99%, #323B4D 100%);
+
+/* Light mode */
+@ksd_ref_dm-radial-iphpt:radial-gradient(77.33% 50% at 50% 50%, #B7C5CC 42.1%, #E2EFF8 100%);
+
+/*------------------------------------------ Lines ---------------------------------------*/
+
+/* ------------ Vertical Lines -------------*/
+
+/* Light mode */
+@ksd_ref_lm_gradient-vertical-line:linear-gradient(270deg, #FAFAFA 0%, #F0E0C0 48.35%, #FAFAFA 100%);
+
+/* Dark mode */
+@ksd_ref_dm_gradient-vertical-line:linear-gradient(90deg, #1A2633 0%, #171F26 53.04%, #1A2633 100%);
+
+/* ------------ Horizontal Lines -------------*/
+
+/* Light mode */
+@ksd_ref_lm_gradient-horizontal-line:linear-gradient(90deg, rgba(255, 255, 255, 0.302937) 0%, #F0E0C0 53.04%, rgba(255, 255, 255, 0) 100%);
+
+/* Dark mode */
+@ksd_ref_dm_gradient-horiznotal-line:linear-gradient(90deg, #1A2633 0%, #171F26 53.04%, #1A2633 100%);
+
+
+//----------------------------------------------------------------------------------------------//
+/*------------------------------------------ Erathis ----------------------------------------- */
+
+@ksd_ref_erathis-bg-transparent:rgba(0, 0, 0, 0.57);
+@ksd_ref_erathis-horizontal-line:linear-gradient(90deg, rgba(255, 255, 255, 0.17) 0%, rgba(183, 197, 204, 0.53) 53.04%, rgba(255, 255, 255, 0.17) 100%);
+@ksd_ref_erathis-seperation-line:linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.11) 26.48%, #E5F2FF 50.96%, rgba(255, 255, 255, 0.17) 74.91%, rgba(255, 255, 255, 0) 100%);
+@ksd_ref_erathis_title-line:linear-gradient(90deg, #E5F2FF 50.96%, rgba(255, 255, 255, 0.17) 74.91%, rgba(255, 255, 255, 0) 100%);
+@ksd_ref_erathis-logo-dark-blue:#09151B;
+@ksd_ref_erathis-blue: #265973;
+
+
+//----------------------------------------------------------------------------------------------//
+/*------------------------------------ Erathis Police ---------------------------------------- */
+@ksd_ref_erathis-police:3px 3px 7px #000000;
+
+
+//----------------------------------------------------------------------------------------------//
+/*------------------------------------------- KWK -------------------------------------------- */
+
+@ksd_ref_kwk-fp-title-line:linear-gradient(90deg, #F0E0C0 50.96%, rgba(255, 255, 255, 0.17) 74.91%, rgba(255, 255, 255, 0) 100%);
+@ksd_ref_kwk-salamon:#F76E6E;
+@ksd_ref_kwk-bg-transparent:rgba(255, 255, 255, 0.57);; // to be checked with alaa
+
+
+//----------------------------------------------------------------------------------------------//
+/*---------------------------------------- Typography ---------------------------------------- */
+
+@ksd_ref_font-family_luna: "Lúna";
+@ksd_ref_font-family_poppins: "Poppins";
+@ksd_ref_font-family_shipori: "Shippori Mincho";
+@ksd_ref_font-family_montserrat:"Montserrat";
+@ksd_ref_font-family_david:"David Libre";
+@ksd_ref_font-family_waterfall:"Waterfall";
+
+//----------------------------------------------------------------------------------------------//
+/*--------------------------------------- Font weight ---------------------------------------- */
+
+@ksd_ref_font-weight-200: 200;
+@ksd_ref_font-weight-300: 300;
+@ksd_ref_font-weight-400: 400;
+@ksd_ref_font-weight-500: 500;
+@ksd_ref_font-weight-600: 600;
+@ksd_ref_font-weight-700: 700;
+@ksd_ref_font-weight-800: 800;
+
+//----------------------------------------------------------------------------------------------//
+/*--------------------------------------- Border-radius ---------------------------------------- */
+
+@ksd_ref_border_radius_large: 11px;
+@ksd_ref_border_radius_normal: 7px;
+@ksd_ref_border_radius_medium: 5px;
+@ksd_ref_border_radius_small: 3px;
+@ksd_ref_border_radius_ultra_small: 2px;
+
+
+//----------------------------------------------------------------------------------------------//
+/*--------------------------------------- Base URL ------------------------------------------- */
+
+@base_url: "../../public/images/";
+
+
+//----------------------------------------------------------------------------------------------//
+//scroll bar design ****************************
+::-webkit-scrollbar {
+  display: none;
+}

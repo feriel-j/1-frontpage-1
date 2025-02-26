@@ -1,0 +1,27 @@
+@import url("./preset.less");
+@import url("./mix.less");
+// CSS properties of textarea input
+.textarea-input {
+  background-color: @ksd_ref_low-white;
+  border: @ksd_ref_lm-solid-border;
+  border-radius: @ksd_ref_border_radius_large;
+  box-shadow: @ksd_ref_card-vertical-shadow;
+  color: @ksd_ref_lm-elements;
+  .ksd_sys_flex-box-centred;
+  letter-spacing: 0.07em;
+  line-height: 1.75;
+  padding: 2%;
+  .poppins-modest-light;
+}
+// CSS properties of textarea placeholder
+.textarea-input::placeholder {
+  color: @ksd_ref_lm-elements;
+}
+//remove the resize handle on the bottom right
+textarea {
+  border: none;
+  box-shadow: none;
+  outline: none;
+  overflow: auto;
+  resize: none;
+}

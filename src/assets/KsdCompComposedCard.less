@@ -1,0 +1,164 @@
+@import url("./preset.less");
+@import url("./mix.less");
+
+.composed-card-container {
+  border: @ksd_ref_lm-solid-border;
+  border-radius: @ksd_ref_border_radius_normal;
+  box-shadow: @ksd_ref_card-vertical-shadow;
+  padding: 2vw;
+  .ksd_sys_flex-box-centred;
+
+  .overlay-container-composed-card {
+    background-color: @ksd_ref_kwk-bg-transparent;
+    border-radius: @ksd_ref_border_radius_normal;
+    flex-direction: column;
+    gap: 0.5vw;
+    height: 100%;
+    line-height: 2;
+    text-align: center;
+    width: 100%;
+
+    .ksd_sys_flex-box-AI-centred-JC-space-around;
+  }
+}
+
+//kwk-variant
+
+.composed-card-container-kwk {
+  background-image: url("@{base_url}atul-vinayak.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+
+  .overlay-container-composed-card {
+    padding: 2%;
+
+    h3 {
+      color: @ksd_ref_lm-elements;
+      width: 100%;
+      .montserrat-fine-medium;
+    }
+
+    h4 {
+      color: @ksd_ref_lm-elements;
+      width: 100%;
+      .montserrat-fine-regular;
+
+      & span {
+        .montserrat-fine-medium;
+      }
+    }
+  }
+}
+
+//sdgs variant
+
+.composed-card-container-sdgs {
+  background-position: center;
+  background-size: cover;
+
+  .overlay-container-composed-card {
+    height: 100%;
+
+    h1 {
+      color: @ksd_ref_lm-elements;
+      padding: 5vw 0;
+      text-align: center;
+      width: 100%;
+      .shiporiMincho-fine-extra-bold;
+    }
+  }
+}
+//economic-growth variant----
+.economic-growth {
+  background-image: url("@{base_url}dan-gold.jpg");
+}
+//inequality variant-----
+.inequality {
+  background-image: url("@{base_url}elena.jpg");
+}
+//communities variant-----
+.communities {
+  background-image: url("@{base_url}eugene.jpg");
+}
+//goals variant-----
+.goals {
+  background-image: url("@{base_url}jordan.jpg");
+  background-position: 0 55%;
+}
+
+/* ==============================MEDIA QUERRY=================================== */
+
+//width between 750px and 1150px
+@media (min-width: 750px) and (max-width: 1150px) {
+  .composed-card-container {
+    border-radius: @ksd_ref_border_radius_large;
+
+    .overlay-container-composed-card {
+      border-radius: @ksd_ref_border_radius_large;
+    }
+  }
+  //kwk variant
+  .composed-card-container-kwk {
+    .overlay-container-composed-card {
+      h3 {
+        font-size: 0.7rem;
+      }
+
+      h4 {
+        font-size: 0.7rem;
+
+        & span {
+          font-size: 0.7rem;
+        }
+      }
+    }
+  }
+  //sdgs variant
+  .composed-card-container-sdgs {
+    .overlay-container-composed-card {
+      h1 {
+        font-size: 0.55rem;
+        padding:3vw 0 ;
+      }
+    }
+  }
+}
+
+//width more than 1150px --------
+@media (min-width: 1150px) {
+  .composed-card-container {
+    border-radius: @ksd_ref_border_radius_large;
+    
+    .overlay-container-composed-card {
+      border-radius: @ksd_ref_border_radius_large;
+    }
+  }
+  //kwk variant
+  .composed-card-container-kwk {
+    border-radius: @ksd_ref_border_radius_large;
+
+    .overlay-container-composed-card {
+      h3 {
+        font-size: 0.85rem;
+      }
+
+      h4 {
+        font-size: 0.85rem;
+
+        & span {
+          font-size: 0.85rem;
+        }
+      }
+    }
+  }
+  //sdgs variant
+  .composed-card-container-sdgs {
+    .overlay-container-composed-card {
+      h1 {
+        font-size: 0.75rem;
+        padding:3vw 0 ;
+      }
+    }
+  }
+}

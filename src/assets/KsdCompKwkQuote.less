@@ -1,0 +1,49 @@
+@import url("./preset.less");
+@import url("./mix.less");
+
+//css proprieties for the quote title----
+.quote-title{
+    letter-spacing: 0.02rem;
+    line-height: 1.25;
+    padding-inline: 1%;
+    text-align: center;
+    .waterfall-modest-regular;
+}
+
+//quote's green variant
+.quote-green{
+    color:@ksd_ref_lm-green;
+}
+//quote's orange variant
+.quote-orange{
+    color:@ksd_ref_lm-orange;
+}
+//quote's red variant
+.quote-red{
+    color:@ksd_ref_lm-red;
+}
+//quote's purple variant
+.quote-purple{
+    color:@ksd_ref_lm-violet;
+}
+
+/* =============================== MEDIA QUERY =============================== */
+
+//width between 550px and 750px ----------------
+@media (min-width: 550px) and (max-width:750px) {
+  .quote-title{
+    font-size: 1.1rem;
+  }
+}
+//width between 750px and 1100px-----------
+@media (min-width: 750px) and (max-width:1150px) {
+    .quote-title{
+      font-size: 1.5rem;
+    }
+  }
+//width greater than 1100px--------------
+@media (min-width: 1150px)  {
+    .quote-title{
+      font-size: 1.7rem;
+    }
+  }

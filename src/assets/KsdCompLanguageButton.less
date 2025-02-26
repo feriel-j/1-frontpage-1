@@ -1,0 +1,27 @@
+@import url("./preset.less");
+@import url("./mix.less");
+//CSS properties
+.button-language {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  .ksd_sys_flex-box-centred;
+  gap: 0.5vw;
+  width: fit-content;
+
+  .button-language-icon {
+    font-size: 1.3rem;
+  }
+
+  span {
+    color: @ksd_ref_lm-orange;
+    .poppins-modest-medium;
+
+    &:last-child {
+      border: 1px solid @ksd_ref_lm-orange;
+      border-radius: @ksd_ref_border_radius_small;
+      padding: .1rem;
+     
+    }
+  }
+}

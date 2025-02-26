@@ -1,0 +1,27 @@
+@import url("./preset.less");
+@import url("./mix.less");
+
+
+//CSS properties of checkbox
+.checkbox-input {
+  background-color: transparent;
+  color: @ksd_ref_lm-elements;
+  cursor: pointer;
+  gap: 0.3rem;
+  .ksd_sys_flex-box-centred;
+  .poppins-modest-light;
+  //Checkbox input properties
+  input[type="checkbox"] {
+    background-color: @ksd_ref_low-white !important;
+    border: 1px solid @ksd_ref_grey;
+    border-radius: @ksd_ref_border_radius_ultra_small;
+    cursor: pointer;
+    height: 0.7rem;
+    width: 0.7rem;
+    //Checked Checkbox
+    &:checked {
+      accent-color: @ksd_ref_lm-green !important;
+      color: @ksd_ref_lm-bg-layer;
+    }
+  }
+}

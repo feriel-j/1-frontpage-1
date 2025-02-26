@@ -1,0 +1,841 @@
+@import "./preset.less";
+
+
+
+/* Reset appearance properties for checkbox */
+input[type="checkbox"] {
+  appearance: none;
+}
+//used for working checked of checkbox
+input[type="checkbox"]:checked {
+  -moz-appearance: checkbox;
+  -webkit-appearance: checkbox;
+  -o-appearance: checkbox;
+  appearance: check
+  box;
+}
+
+//Removing the background color of the autocomplete element of inputs------------------
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 9999s ease-in-out 0s;
+}
+
+//------------------------Flex Box----------------------------------------------//
+
+/*------------------------- display block ---------------------------------------*/
+
+.ksd_sys_block {
+  display: block;
+}
+
+
+/*------------------------- display flex ---------------------------------------*/
+
+.ksd_sys_flex {
+  display: flex;
+}
+
+//----------------------------AI centered --------------------------------//
+
+/* ---- Align items center justify content center ---*/
+
+.ksd_sys_flex-box-centred {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---- Align items center justify content start ---*/
+
+.ksd_sys_flex-box-AI-centred-JC-start {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* ---- Align items center justify content end-----*/
+
+.ksd_sys_flex-box-AI-centred-JC-end {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* ---- Align items center justify content space-between ---*/
+
+.ksd_sys_flex-box-AI-centred-JC-space-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ---- Align items center justify content space-around ---*/
+
+.ksd_sys_flex-box-AI-centred-JC-space-around {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* ---- Align items center justify content space-evenly---*/
+
+.ksd_sys_flex-box-AI-centred-JC-space-evenly {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+//----------------------------AI start --------------------------------//
+
+/* ---- Align items start justify content center ---*/
+
+.ksd_sys_flex-box-AI-start-JC-center {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* ---- Align items start justify content start ---*/
+
+.ksd_sys_flex-box-AI-start-JC-start {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* ---- Align items start justify content end-----*/
+
+.ksd_sys_flex-box-AI-start-JC-end {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+/* ---- Align items start justify content space-between ---*/
+
+.ksd_sys_flex-box-AI-start-JC-space-between {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+/* ---- Align items start justify content space-around ---*/
+
+.ksd_sys_flex-box-AI-start-JC-space-around {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+/* ---- Align items start justify content space-evenly---*/
+
+.ksd_sys_flex-box-AI-start-JC-space-evenly {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+//----------------------------AI end --------------------------------//
+
+/* ---- Align items end justify content center ---*/
+
+.ksd_sys_flex-box-AI-end-JC-center {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+/* ---- Align items end justify content start ---*/
+
+.ksd_sys_flex-box-AI-end-JC-start {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+/* ---- Align items end justify content end-----*/
+
+.ksd_sys_flex-box-AI-end-JC-end {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+/* ---- Align items end justify content space-between ---*/
+
+.ksd_sys_flex-box-AI-end-JC-space-between {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+/* ---- Align items end justify content space-around ---*/
+
+.ksd_sys_flex-box-AI-end-JC-space-around {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+/* ---- Align items end justify content space-evenly---*/
+
+.ksd_sys_flex-box-AI-end-JC-space-evenly {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+}
+
+//----------------------------AI stretch --------------------------------//
+
+/* ---- Align items stretch justify content center ---*/
+
+.ksd_sys_flex-box-AI-stretch-JC-center {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+/* ---- Align items stretch justify content start ---*/
+
+.ksd_sys_flex-box-AI-stretch-JC-start {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+/* ---- Align items stretch justify content end-----*/
+
+.ksd_sys_flex-box-AI-stretch-JC-end {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
+}
+
+/* ---- Align items stretch justify content space-between ---*/
+
+.ksd_sys_flex-box-AI-stretch-JC-space-between {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+/* ---- Align items stretch justify content space-around ---*/
+
+.ksd_sys_flex-box-AI-stretch-JC-space-around {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+}
+
+/* ---- Align items stretch justify content space-evenly---*/
+
+.ksd_sys_flex-box-AI-stretch-JC-space-evenly {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-evenly;
+}
+
+/* =================================== Typography =========================================== */
+
+// --------LUNA------------------------//
+
+//luna figma 23px fw:400
+.luna-moderate-regular {
+  font-family: @ksd_ref_font-family_luna;
+  font-weight: @ksd_ref_font-weight-400;
+  font-size: 1.7rem;
+}
+
+//luna figma 37px fw:400
+.luna-dominant-regular {
+  font-family: @ksd_ref_font-family_luna;
+  font-weight: @ksd_ref_font-weight-400;
+  font-size: 2.8rem;
+}
+
+
+
+// --------WATERFALL------------------------//
+
+//waterfall figma 11px fw:400
+.waterfall-modest-regular {
+  font-family: @ksd_ref_font-family_waterfall;
+  font-weight: @ksd_ref_font-weight-400;
+  font-size: 1rem;
+}
+
+//waterfall figma 23px fw:400
+.waterfall-dominant-regular {
+  font-family: @ksd_ref_font-family_waterfall;
+  font-weight: @ksd_ref_font-weight-400;
+  font-size: 1.3rem;
+}
+
+
+
+// --------DAVID LIBRE------------------------//
+
+//david libre figma 11px fw:400
+.davidLibre-modest-regular{
+  font-family: @ksd_ref_font-family_david;
+  font-weight: @ksd_ref_font-weight-400;
+  font-size: .7rem;
+}
+
+//david libre figma 17px fw:400
+.davidLibre-moderate-regular {
+  font-family: @ksd_ref_font-family_david;
+  font-weight: @ksd_ref_font-weight-400;
+  font-size: 1.1rem;
+}
+
+//david libre figma 17px fw:400
+.davidLibre-striking-regular {
+  font-family: @ksd_ref_font-family_david;
+  font-weight: @ksd_ref_font-weight-400;
+  font-size: 1.5rem;
+}
+
+
+
+//-------------------MONTSERRAT------------------------//
+//montserrat figma 7px fw:300
+.montserrat-fine-light {
+  font-family: @ksd_ref_font-family_montserrat;
+  font-weight: @ksd_ref_font-weight-300;
+  font-size: 0.5rem;
+}
+//montserrat figma 7px fw:400
+.montserrat-fine-regular {
+  font-family: @ksd_ref_font-family_montserrat;
+  font-weight: @ksd_ref_font-weight-400;
+  font-size: 0.5rem;
+}
+
+//montserrat figma 7px fw:500
+.montserrat-fine-medium {
+  font-family: @ksd_ref_font-family_montserrat;
+  font-weight: @ksd_ref_font-weight-500;
+  font-size: 0.5rem;
+}
+
+//montserrat figma 7px fw:600
+.montserrat-fine-semi-bold {
+  font-family: @ksd_ref_font-family_montserrat;
+  font-weight: @ksd_ref_font-weight-600;
+  font-size: 0.5rem;
+}
+//montserrat figma 7px fw:700
+.montserrat-fine-bold {
+  font-family: @ksd_ref_font-family_montserrat;
+  font-weight: @ksd_ref_font-weight-700;
+  font-size: 0.5rem;
+}
+
+//montserrat figma 7px fw:800
+.montserrat-fine-extra-bold {
+  font-family: @ksd_ref_font-family_montserrat;
+  font-weight: @ksd_ref_font-weight-800;
+  font-size: 0.5rem;
+}
+
+/* *********************************** */
+//montserrat figma 11px fw:300
+.montserrat-modest-light {
+  font-family: @ksd_ref_font-family_montserrat;
+  font-weight: @ksd_ref_font-weight-300;
+  font-size: .8rem;
+}
+//montserrat figma 11px fw:400
+.montserrat-modest-regular {
+  font-family: @ksd_ref_font-family_montserrat;
+  font-weight: @ksd_ref_font-weight-400;
+  font-size: .8rem;
+}
+
+//montserrat figma 11px fw:500
+.montserrat-modest-medium {
+  font-family: @ksd_ref_font-family_montserrat;
+  font-weight: @ksd_ref_font-weight-500;
+  font-size: .8rem;
+}
+
+//montserrat figma 11px fw:600
+.montserrat-modest-semi-bold {
+  font-family: @ksd_ref_font-family_montserrat;
+  font-weight: @ksd_ref_font-weight-600;
+  font-size: .8rem;
+}
+
+//montserrat figma 11px fw:700
+.montserrat-modest-bold {
+  font-family: @ksd_ref_font-family_montserrat;
+  font-weight: @ksd_ref_font-weight-700;
+  font-size: .8rem;
+}
+
+//montserrat figma 11px fw:800
+.montserrat-modest-extra-bold {
+  font-family: @ksd_ref_font-family_montserrat;
+  font-weight: @ksd_ref_font-weight-800;
+  font-size: .8rem;
+}
+
+
+/* *********************************** */
+//montserrat figma 13px fw:300
+.montserrat-standard-light {
+  font-family: @ksd_ref_font-family_montserrat;
+  font-weight: @ksd_ref_font-weight-300;
+  font-size: 1rem;
+}
+
+//montserrat figma 13px fw:400
+.montserrat-standard-regular {
+  font-family: @ksd_ref_font-family_montserrat;
+  font-weight: @ksd_ref_font-weight-400;
+  font-size: 1rem;
+}
+//montserrat figma 13px fw:500
+.montserrat-standard-medium {
+  font-family: @ksd_ref_font-family_montserrat;
+  font-weight: @ksd_ref_font-weight-500;
+  font-size: 1rem;
+}
+//montserrat figma 13px fw:600
+.montserrat-standard-semi-bold {
+  font-family: @ksd_ref_font-family_montserrat;
+  font-weight: @ksd_ref_font-weight-600;
+  font-size: 1rem;
+}
+//montserrat figma 13px fw:700
+.montserrat-standard-bold {
+  font-family: @ksd_ref_font-family_montserrat;
+  font-weight: @ksd_ref_font-weight-700;
+  font-size: 1rem;
+}
+//montserrat figma 13px fw:800
+.montserrat-standard-extra-bold {
+  font-family: @ksd_ref_font-family_montserrat;
+  font-weight: @ksd_ref_font-weight-800;
+  font-size: 1rem;
+}
+
+/* ********************************* */
+//montserrat figma 23px fw:300
+.montserrat-dominent-light {
+  font-family: @ksd_ref_font-family_montserrat;
+  font-weight: @ksd_ref_font-weight-300;
+  font-size: 1.1rem;
+}
+//montserrat figma 23px fw:400
+.montserrat-dominent-regular {
+  font-family: @ksd_ref_font-family_montserrat;
+  font-weight: @ksd_ref_font-weight-400;
+  font-size: 1.1rem;
+}
+//montserrat figma 23px fw:500
+.montserrat-dominent-medium {
+  font-family: @ksd_ref_font-family_montserrat;
+  font-weight: @ksd_ref_font-weight-500;
+  font-size: 1.1rem;
+}
+//montserrat figma 23px fw:600
+.montserrat-dominent-semi-bold {
+  font-family: @ksd_ref_font-family_montserrat;
+  font-weight: @ksd_ref_font-weight-600;
+  font-size: 1.1rem;
+}
+//montserrat figma 23px fw:700
+.montserrat-dominent-bold {
+  font-family: @ksd_ref_font-family_montserrat;
+  font-weight: @ksd_ref_font-weight-700;
+  font-size: 1.1rem;
+}
+//montserrat figma 23px fw:800
+.montserrat-dominent-extra-bold {
+  font-family: @ksd_ref_font-family_montserrat;
+  font-weight: @ksd_ref_font-weight-800;
+  font-size: 1.1rem;
+}
+
+
+
+
+
+//-------------------SHIPPORI MINCHO------------------------//
+
+//shippori figma 7px fw:300
+.shiporiMincho-fine-light {
+  font-family: @ksd_ref_font-family_shipori;
+  font-weight: @ksd_ref_font-weight-300;
+  font-size: .6rem;
+}
+//shippori figma 7px fw:400
+.shiporiMincho-fine-regular {
+  font-family: @ksd_ref_font-family_shipori;
+  font-weight: @ksd_ref_font-weight-400;
+  font-size: .6rem;
+}
+//shippori figma 7px fw:500
+.shiporiMincho-fine-medium {
+  font-family: @ksd_ref_font-family_shipori;
+  font-weight: @ksd_ref_font-weight-500;
+  font-size: .6rem;
+}
+//shippori figma 7px fw:600
+.shiporiMincho-fine-semi-bold {
+  font-family: @ksd_ref_font-family_shipori;
+  font-weight: @ksd_ref_font-weight-600;
+  font-size: .6rem;
+}
+//shippori figma 7px fw:700
+.shiporiMincho-fine-bold {
+  font-family: @ksd_ref_font-family_shipori;
+  font-weight: @ksd_ref_font-weight-700;
+  font-size: .6rem;
+}
+//shippori figma 7px fw:800
+.shiporiMincho-fine-extra-bold {
+  font-family: @ksd_ref_font-family_shipori;
+  font-weight: @ksd_ref_font-weight-800;
+  font-size: .6rem;
+}
+
+/* ************************************* */
+
+//shippori figma 11px fw:300
+.shiporiMincho-modest-light {
+  font-family: @ksd_ref_font-family_shipori;
+  font-weight: @ksd_ref_font-weight-300;
+  font-size: .9rem;
+}
+
+//shippori figma 11px fw:400
+.shiporiMincho-modest-regular {
+  font-family: @ksd_ref_font-family_shipori;
+  font-weight: @ksd_ref_font-weight-400;
+  font-size: .9rem;
+}
+
+//shippori figma 11px fw:500
+.shiporiMincho-modest-medium {
+  font-family: @ksd_ref_font-family_shipori;
+  font-weight: @ksd_ref_font-weight-500;
+  font-size: .9rem;
+}
+//shippori figma 11px fw:600
+.shiporiMincho-modest-semi-bold {
+  font-family: @ksd_ref_font-family_shipori;
+  font-weight: @ksd_ref_font-weight-600;
+  font-size: .9rem;
+}
+
+//shippori figma 11px fw:700
+.shiporiMincho-modest-bold {
+  font-family: @ksd_ref_font-family_shipori;
+  font-weight: @ksd_ref_font-weight-700;
+  font-size: .9rem;
+}
+
+//shippori figma 11px fw:800
+.shiporiMincho-modest-extra-bold {
+  font-family: @ksd_ref_font-family_shipori;
+  font-weight: @ksd_ref_font-weight-800;
+  font-size: .9rem;
+}
+
+//shippori figma 11px fw:300
+.shiporiMincho-modest-light {
+  font-family: @ksd_ref_font-family_shipori;
+  font-weight: @ksd_ref_font-weight-300;
+  font-size: .9rem;
+}
+
+/* *************************************** */
+//shippori figma 13px fw:300
+.shiporiMincho-standard-light {
+  font-family: @ksd_ref_font-family_shipori;
+  font-weight: @ksd_ref_font-weight-300;
+  font-size: 1rem;
+}
+
+//shippori figma 13px fw:400
+.shiporiMincho-standard-regular {
+  font-family: @ksd_ref_font-family_shipori;
+  font-weight: @ksd_ref_font-weight-400;
+  font-size: 1rem;
+}
+//shippori figma 13px fw:500
+.shiporiMincho-standard-medium {
+  font-family: @ksd_ref_font-family_shipori;
+  font-weight: @ksd_ref_font-weight-500;
+  font-size: 1rem;
+}
+
+//shippori figma 13px fw:600
+.shiporiMincho-standard-semi-bold {
+  font-family: @ksd_ref_font-family_shipori;
+  font-weight: @ksd_ref_font-weight-600;
+  font-size: 1rem;
+}
+
+//shippori figma 13px fw:700
+.shiporiMincho-standard-bold {
+  font-family: @ksd_ref_font-family_shipori;
+  font-weight: @ksd_ref_font-weight-700;
+  font-size: 1rem;
+}
+
+//shippori figma 13px fw:800
+.shiporiMincho-standard-extra-bold {
+  font-family: @ksd_ref_font-family_shipori;
+  font-weight: @ksd_ref_font-weight-800;
+  font-size: 1rem;
+}
+
+//shippori figma 31px fw:300
+.shiporiMincho-substantial-light{
+  font-family: @ksd_ref_font-family_shipori;
+  font-weight: @ksd_ref_font-weight-800;
+  font-size:2.3rem;
+}
+//shippori figma 31px fw:400
+.shiporiMincho-substantial-regular{
+  font-family: @ksd_ref_font-family_shipori;
+  font-weight: @ksd_ref_font-weight-400;
+  font-size: 2.3rem;
+}
+//shippori figma 31px fw:500
+.shiporiMincho-substantial-medium{
+  font-family: @ksd_ref_font-family_shipori;
+  font-weight: @ksd_ref_font-weight-500;
+  font-size:2.3rem;
+}
+//shippori figma 31px fw:600
+.shiporiMincho-substantial-semi-bold{
+  font-family: @ksd_ref_font-family_shipori;
+  font-weight: @ksd_ref_font-weight-600;
+  font-size:2.3rem;
+}
+//shippori figma 31px fw:700
+.shiporiMincho-substantial-bold{
+  font-family: @ksd_ref_font-family_shipori;
+  font-weight: @ksd_ref_font-weight-700;
+  font-size:2.3rem;
+}
+//shippori figma 31px fw:800
+.shiporiMincho-substantial-extra-bold{
+  font-family: @ksd_ref_font-family_shipori;
+  font-weight: @ksd_ref_font-weight-800;
+  font-size: 2.3rem;
+}
+
+//-------------------POPPINS------------------------//
+
+//poppins figma 7px fw:300
+.poppins-fine-light {
+  font-family: @ksd_ref_font-family_poppins;
+  font-weight: @ksd_ref_font-weight-300;
+  font-size: .55rem;
+}
+//poppins figma 7px fw:400
+.poppins-fine-regular {
+  font-family: @ksd_ref_font-family_poppins;
+  font-weight: @ksd_ref_font-weight-400;
+  font-size: .55rem;
+}
+//poppins figma 7px fw:500
+.poppins-fine-medium {
+  font-family: @ksd_ref_font-family_poppins;
+  font-weight: @ksd_ref_font-weight-500;
+  font-size: .55rem;
+}
+//poppins figma 7px fw:600
+.poppins-fine-semi-bold {
+  font-family: @ksd_ref_font-family_poppins;
+  font-weight: @ksd_ref_font-weight-600;
+  font-size: .55rem;
+}
+//poppins figma 7px fw:700
+.poppins-fine-bold {
+  font-family: @ksd_ref_font-family_poppins;
+  font-weight: @ksd_ref_font-weight-700;
+  font-size: .55rem;
+}
+
+//poppins figma 7px fw:800
+.poppins-fine-extra-bold {
+  font-family: @ksd_ref_font-family_poppins;
+  font-weight: @ksd_ref_font-weight-700;
+  font-size: .55rem;
+}
+
+
+/* ********************************** */
+//poppins figma 11px fw:300
+.poppins-modest-light {
+  font-family: @ksd_ref_font-family_poppins;
+  font-weight: @ksd_ref_font-weight-300;
+  font-size: .7rem;
+}
+
+//poppins figma 11px fw:400
+.poppins-modest-regular {
+  font-family: @ksd_ref_font-family_poppins;
+  font-weight: @ksd_ref_font-weight-400;
+  font-size: .7rem;
+}
+//poppins figma 11px fw:500
+.poppins-modest-medium {
+  font-family: @ksd_ref_font-family_poppins;
+  font-weight: @ksd_ref_font-weight-500;
+  font-size: .7rem;
+}
+//poppins figma 11px fw:600
+.poppins-modest-semi-bold {
+  font-family: @ksd_ref_font-family_poppins;
+  font-weight: @ksd_ref_font-weight-600;
+  font-size: .7rem;
+}
+
+//poppins figma 11px fw:700
+.poppins-modest-bold {
+  font-family: @ksd_ref_font-family_poppins;
+  font-weight: @ksd_ref_font-weight-700;
+  font-size: .7rem;
+}
+
+//poppins figma 11px fw:800
+.poppins-modest-extra-bold {
+  font-family: @ksd_ref_font-family_poppins;
+  font-weight: @ksd_ref_font-weight-800;
+  font-size: .7rem;
+}
+/* ********************************** */
+
+//poppins figma 13px fw:300
+.poppins-standard-light {
+  font-family: @ksd_ref_font-family_poppins;
+  font-weight: @ksd_ref_font-weight-300;
+  font-size: .9rem;
+}
+//poppins figma 13px fw:400
+.poppins-standard-regular {
+  font-family: @ksd_ref_font-family_poppins;
+  font-weight: @ksd_ref_font-weight-400;
+  font-size: .9rem;
+}
+//poppins figma 13px fw:500
+.poppins-standard-medium {
+  font-family: @ksd_ref_font-family_poppins;
+  font-weight: @ksd_ref_font-weight-500;
+  font-size: .9rem;
+}
+//poppins figma 13px fw:600
+.poppins-standard-semi-bold {
+  font-family: @ksd_ref_font-family_poppins;
+  font-weight: @ksd_ref_font-weight-600;
+  font-size: .9rem;
+}
+//poppins figma 13px fw:700
+.poppins-standard-bold {
+  font-family: @ksd_ref_font-family_poppins;
+  font-weight: @ksd_ref_font-weight-700;
+  font-size: .9rem;
+}
+
+//poppins figma 13px fw:800
+.poppins-standard-extra-bold {
+  font-family: @ksd_ref_font-family_poppins;
+  font-weight: @ksd_ref_font-weight-800;
+  font-size: .9rem;
+}
+/* ********************************** */
+
+//poppins figma 17px fw:300
+.poppins-moderate-light {
+  font-family: @ksd_ref_font-family_poppins;
+  font-weight: @ksd_ref_font-weight-300;
+  font-size: 1rem;
+}
+//poppins figma 17px fw:400
+.poppins-moderate-regular {
+  font-family: @ksd_ref_font-family_poppins;
+  font-weight: @ksd_ref_font-weight-400;
+  font-size: 1rem;
+}
+//poppins figma 17px fw:500
+.poppins-moderate-medium {
+  font-family: @ksd_ref_font-family_poppins;
+  font-weight: @ksd_ref_font-weight-500;
+  font-size: 1rem;
+}
+
+//poppins figma 17px fw:600
+.poppins-moderate-semi-bold {
+  font-family: @ksd_ref_font-family_poppins;
+  font-weight: @ksd_ref_font-weight-600;
+  font-size: 1rem;
+}
+
+//poppins figma 17px fw:700
+.poppins-moderate-bold {
+  font-family: @ksd_ref_font-family_poppins;
+  font-weight: @ksd_ref_font-weight-700;
+  font-size: 1rem;
+}
+
+//poppins figma 17px fw:800
+.poppins-moderate-extra-bold {
+  font-family: @ksd_ref_font-family_poppins;
+  font-weight: @ksd_ref_font-weight-800;
+  font-size: 1rem;
+}
+
+/* ********************************** */
+
+//poppins figma 19px fw:300
+.poppins-exemplary-light{
+  font-family: @ksd_ref_font-family_poppins;
+  font-weight: @ksd_ref_font-weight-300;
+  font-size: 1.5rem;
+}
+
+//poppins figma 19px fw:400
+.poppins-exemplary-regular{
+  font-family: @ksd_ref_font-family_poppins;
+  font-weight: @ksd_ref_font-weight-400;
+  font-size: 1.5rem;
+}
+
+//poppins figma 19px fw:500
+.poppins-exemplary-medium{
+  font-family: @ksd_ref_font-family_poppins;
+  font-weight: @ksd_ref_font-weight-500;
+  font-size: 1.5rem;
+}
+
+//poppins figma 19px fw:600
+.poppins-exemplary-semi-bold{
+  font-family: @ksd_ref_font-family_poppins;
+  font-weight: @ksd_ref_font-weight-600;
+  font-size: 1.5rem;
+}
+
+//poppins figma 19px fw:700
+.poppins-exemplary-bold{
+  font-family: @ksd_ref_font-family_poppins;
+  font-weight: @ksd_ref_font-weight-700;
+  font-size: 1.5rem;
+}
+
+//poppins figma 19px fw:800
+.poppins-exemplary-extra-bold{
+  font-family: @ksd_ref_font-family_poppins;
+  font-weight: @ksd_ref_font-weight-800;
+  font-size: 1.5rem;
+}

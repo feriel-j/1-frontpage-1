@@ -1,0 +1,98 @@
+@import url("./preset.less");
+@import url("./mix.less");
+
+//styling the navigation menu---
+.navigation-menu-list {
+  background-color: transparent;
+  color: @ksd_ref_lm-elements;
+  flex-direction: column;
+  gap: 0.75vh;
+  height: 87vh;
+  list-style: none;
+  width: 100%;
+  .ksd_sys_flex-box-AI-centred-JC-space-around;
+  //styling the list elements------
+  li {
+    
+    color: @ksd_ref_lm-elements;
+    line-height: 2;
+    transform: rotate(180deg);
+    writing-mode: vertical-rl;
+    .ksd_sys_flex-box-centred;
+    .poppins-fine-regular;
+  }
+  //styling the seperation line -----
+  .divider-menu {
+    background: @ksd_ref_lm-elements;
+    min-width: 0.2vh;
+    transform: rotate(90deg);
+    width: 2vh;
+  }
+}
+
+#selected-item {
+  color: @ksd_ref_lm-orange;
+}
+
+#selected-divider {
+  background-color: @ksd_ref_lm-orange;
+}
+
+/* ====================================MEDIA QUERY=============================================== */
+
+//screen with height up to 200 px
+@media (min-height: 1px) and (max-height: 200px) {
+  .navigation-menu-list {
+    //styling the list elements------
+    li {
+      font-size: 0.3rem;
+    }
+    // styling the seperation line -----
+    .divider-menu {
+      width: 0.5vh;
+    }
+  }
+}
+//screen with height between 200 and 300 px
+@media (min-height: 200px) and (max-height: 300px) {
+  .navigation-menu-list {
+    //styling the list elements------
+    li {
+      font-size: 0.35rem;
+    }
+  }
+}
+//screen with height between 330 and 400 px
+@media (min-height: 300px) and (max-height: 400px) {
+  .navigation-menu-list {
+    //styling the list elements------
+    li {
+      font-size: 0.4rem;
+    }
+  }
+}
+//screen with height between 400 and 450 px
+@media (min-height: 400px) and (max-height: 450px) {
+  .navigation-menu-list {
+    //styling the list elements------
+    li {
+      font-size: 0.45rem;
+    }
+  }
+}
+//screen with height between 450 and 600 px
+@media (min-height: 450px) and (max-height: 600px) {
+  .navigation-menu-list {
+    .divider-menu {
+      width: 5vh;
+    }
+  }
+}
+//screen with height more than 600px
+@media (min-height: 600px) {
+  .navigation-menu-list {
+    .divider-menu {
+      width: 5.5vh;
+    }
+  }
+}

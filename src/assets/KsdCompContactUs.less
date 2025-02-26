@@ -1,0 +1,262 @@
+@import url("./preset.less");
+@import url("./mix.less");
+
+//css proprities for contact is container
+.contact-us-container {
+  background-color: @ksd_ref_lm-bg-layer;
+  flex-direction: column;
+  gap: 3vh;
+  min-height: 100dvh;
+  overflow: scroll;
+  padding: 3% 0;
+  width: 100%;
+  .ksd_sys_flex-box-AI-centred-JC-space-evenly;
+  // the form part (first part)------------
+  .form-content-container {
+    box-sizing: border-box;
+    flex-direction: column;
+    gap: 5vh;
+    height: stretch;
+    height: 100%;
+    .ksd_sys_flex-box-AI-centred-JC-space-between;
+    padding-inline: 3%;
+    width: 100%;
+    // the side message - second spart)
+    .message-side-content {
+      flex-direction: column;
+      gap: 4vh;
+      height: stretch;
+      .ksd_sys_flex-box-AI-centred-JC-space-between;
+      width: 100%;
+      //title---------
+      h1 {
+        font-size: 1.3rem;
+        letter-spacing: 0.03em;
+      }
+      //textarea ----------------
+      .contact-us-textarea {
+        font-size: 0.9rem;
+        height: 100%;
+        min-height: 15rem;
+        padding: 3%;
+        width: 100%;
+
+        &::placeholder {
+          font-size: 0.9rem;
+        }
+      }
+    }
+
+    // the inputs container
+    .inputs-container {
+      flex-direction: column;
+      gap: 3vh;
+      .ksd_sys_flex-box-AI-centred-JC-space-between;
+      width: 100%;
+      //logo part--------------
+      .logo-container {
+        flex-direction: column;
+        width: 100%;
+        .ksd_sys_flex-box-centred;
+
+        .kwk-logo-contact {
+          font-size: 5rem;
+        }
+
+        h1 {
+          color: @ksd_ref_lm-elements;
+          .poppins-exemplary-regular;
+        }
+      }
+
+      //the inputs------------------
+
+      .inputs-content {
+        flex-direction: column;
+        gap: 3vh;
+        width: 100%;
+        .ksd_sys_flex-box-AI-centred-JC-space-around;
+        // underlined inputs------------
+        .contact-us-underline-input {
+          font-size: 0.85rem;
+
+          &::placeholder {
+            font-size: 0.85rem;
+          }
+        }
+      }
+    }
+  }
+
+  //sucees message-----------
+  .contact-us-message {
+    font-size: 0.9rem;
+  }
+  //footer------------------------
+  .form-footer-container {
+    .ksd_sys_flex-box-AI-centred-JC-space-between;
+    width: 100%;
+    //divider----------------
+    .contact-us-divider {
+      background: transparent;
+      width: 29%;
+    }
+    //button---------------------
+    .contact-us-button {
+      border-radius: @ksd_ref_border_radius_normal;
+      font-size: 0.85rem;
+      margin-inline: 3%;
+      padding: 1% 2%;
+    }
+  }
+}
+// ===============================Media Query==================================
+
+//width greater than 950px
+@media (min-width: 950px) {
+  .contact-us-container {
+    gap: 1vw;
+    height: 100vh;
+    .ksd_sys_flex-box-AI-centred-JC-space-between;
+
+    .form-content-container {
+      flex-flow: row;
+      height: 83%;
+
+      .inputs-container {
+        flex-basis: 49%;
+        gap: 3vw;
+        height: 100%;
+
+        .logo-container {
+          flex-direction: column;
+          width: 100%;
+          .ksd_sys_flex-box-centred;
+
+          .kwk-logo-contact {
+            font-size: 5rem;
+          }
+
+          h1 {
+            font-size: 1.2rem;
+          }
+        }
+
+        .inputs-content {
+          gap: 2vw;height: stretch;
+          height: 100%;
+
+          .contact-us-underline-input {
+            font-size: 0.65rem;
+
+            &::placeholder {
+              font-size: 0.65rem;
+            }
+          }
+        }
+      }
+
+      .message-side-content {
+        flex-basis: 49%;
+        gap: 3vw;
+        height: 100%;
+
+        .underline-title {
+          font-size: 0.95rem;
+        }
+
+        .contact-us-textarea {
+          font-size: 0.65rem;
+          min-height: 13rem;
+
+          &::placeholder {
+            font-size: 0.65rem;
+          }
+        }
+      }
+    }
+
+    .form-footer-container {
+      .contact-us-divider {
+        background: @ksd_ref_kwk-lm-fp-title-line;
+      }
+
+      .contact-us-button {
+        border-radius: @ksd_ref_border_radius_normal;
+        font-size: 0.65rem;
+        padding: 1% 1.5%;
+      }
+    }
+
+    .contact-us-message {
+      font-size: 0.65rem;
+    }
+  }
+}
+
+//--------------------------------------  height ---------------------------------------
+
+//screen with height between 500 and 350 px
+@media (max-height: 500px) {
+  .contact-us-container {
+    gap: 5vh;
+    // the form part (first part)------------
+    .form-content-container {
+      // the side message - second spart)
+      .message-side-content {
+        gap: 5vh;
+        //title---------
+        h1 {
+          font-size: 1.1rem;
+        }
+        //textarea ----------------
+        .contact-us-textarea {
+          font-size: 0.75rem;
+          min-height: 13rem;
+
+          &::placeholder {
+            font-size: 0.7rem;
+          }
+        }
+      }
+
+      // the inputs container
+      .inputs-container {
+        //logo part--------------
+        .logo-container {
+          .kwk-logo-contact {
+            font-size: 3.5rem;
+          }
+
+          h1 {
+            font-size: 1.3rem;
+          }
+        }
+
+        //the inputs------------------
+        .inputs-content {
+          // underlined inputs------------
+          .contact-us-underline-input {
+            font-size: 0.75rem;
+
+            &::placeholder {
+              font-size: 0.75rem;
+            }
+          }
+        }
+      }
+    }
+
+    //sucees message-----------
+    .contact-us-message {
+      font-size: 0.75rem;
+    }
+    //footer------------------------
+    .form-footer-container {
+      //button---------------------
+      .contact-us-button {
+        font-size: 0.75rem;
+      }
+    }
+  }
+}

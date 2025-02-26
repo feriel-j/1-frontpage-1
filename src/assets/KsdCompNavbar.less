@@ -1,0 +1,105 @@
+@import url("./preset.less");
+@import url("./mix.less");
+
+//styling the navigation bar ----
+.navigation-bar {
+  background-color: @ksd_ref_lm-bg-rear;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 3vh;
+  height:100vh;
+  padding: 1vh 0;
+  width: calc(100% - 2px);
+  .ksd_sys_flex-box-centred;
+  //styling the logo----
+  .kwk-logo-nav {
+    font-size: 2vw;
+    padding-left: 0.15vw;
+  }
+  //styling the language button-------
+  .navigation-bar-language-btn {
+    gap: 0.5vh;
+    transform: rotate(-90deg);
+
+    .button-language-icon {
+      font-size: 0.75rem;
+    }
+
+    span {
+      font-size: 0.5rem;
+    }
+  }
+}
+
+//the seperation line css----
+.navigation-divider {
+  background: @ksd_ref_lm_gradient-vertical-line;
+  height: 100vh;
+  width: 2px;
+}
+
+/* ====================================MEDIA QUERY=============================================== */
+
+// //screens with height between 450px & 500px
+// @media (min-height: 450px) and (max-height: 500px) {
+//   .navigation-bar {
+//     //styling the language button-------
+//     .navigation-bar-language-btn {
+//       .button-language-icon {
+//         font-size: 0.8rem;
+//       }
+
+//       span {
+//         font-size: 0.7rem;
+//       }
+//     }
+//   }
+// }
+
+// //screens with height between 450px & 500px
+
+// @media (min-height: 500px) and (max-height: 550px) {
+//   .navigation-bar {
+//     //styling the language button-------
+//     .navigation-bar-language-btn {
+//       .button-language-icon {
+//         font-size: 0.9rem;
+//       }
+
+//       span {
+//         font-size: 0.7rem;
+//       }
+//     }
+//   }
+// }
+// //screens with height between 450px & 500px
+// @media (min-height: 550px) and (max-height: 600px) {
+//   .navigation-bar {
+//     //styling the language button-------
+//     .navigation-bar-language-btn {
+//       .button-language-icon {
+//         font-size: 0.95rem;
+//       }
+
+//       span {
+//         font-size: 0.75rem;
+//       }
+//     }
+//   }
+// }
+
+// //screens with height between 450px & 500px
+// @media (min-height: 600px) {
+//   .navigation-bar {
+//     //styling the language button-------
+//     .navigation-bar-language-btn {
+//       .button-language-icon {
+//         font-size: 1.1rem;
+//       }
+
+//       span {
+//         font-size: 0.8rem;
+//       }
+//     }
+//   }
+// }

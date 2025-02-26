@@ -1,0 +1,85 @@
+@import url("./preset.less");
+@import url("./mix.less");
+//CSS properties of Questions Section
+.questions-container {
+  background-color: transparent;
+  flex-direction: column;
+  gap: 5vw;
+  .ksd_sys_flex-box-centred;
+  width: 100%;
+  //Styled commun css properties
+  .questions-content {
+    flex-direction: column;
+    gap: 2vw;
+    .ksd_sys_flex-box-centred;
+    padding: 0 3%;
+    width: 100%;
+
+    p {
+      color: @ksd_ref_lm-elements;
+      letter-spacing: 0.03em;
+      line-height: 2;
+      .poppins-fine-light;
+      text-align: center;
+      width: 100%;
+    }
+  }
+  //Styled Descriptive Paragraph with variant para-question-one
+  .questions-content-para-question-one {
+    //Styled label
+    label {
+      .poppins-fine-regular;
+    }
+    //bold span
+    span {
+      color: @ksd_ref_lm-elements;
+      .poppins-fine-medium;
+    }
+    //Styled span
+    .specific-span {
+      color: @ksd_ref_lm-orange;
+      .poppins-fine-medium;
+    }
+  }
+  //Styled Descriptive Paragraph with variant para-question-two
+  .questions-content-para-question-two {
+    //Styled label
+    label {
+      font-style: italic;
+      .poppins-fine-regular;
+    }
+    //bold span
+    span {
+      color: @ksd_ref_lm-elements;
+      .poppins-fine-regular;
+    }
+    //Styled span
+    .specific-span {
+      color: @ksd_ref_lm-orange;
+      .poppins-fine-regular;
+    }
+  }
+}
+
+/* =============================== MEDIA QUERY =============================== */
+//width between 750px
+@media (min-width: 750px) {
+  //CSS properties of Questions Section
+  .questions-container {
+    .questions-content {
+      p {
+        font-size: 0.85rem;
+      }
+    }
+
+    .questions-content-para-question-two,
+    .questions-content-para-question-one {
+      label,
+      span,
+      .specific-span {
+        font-size: 0.85rem;
+      }
+    }
+  }
+}
+

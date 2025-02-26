@@ -1,0 +1,32 @@
+@import url("./preset.less");
+@import url("./mix.less");
+// CSS properties of underlined input
+.underline-input-container {
+  .ksd_sys_flex-box-centred;
+  flex-direction: column;
+  width: 100%;
+
+  .underlined-input {
+    background-color: transparent;
+    border: none;
+    color: @ksd_ref_lm-elements;
+    letter-spacing: 0.17em;
+    outline: none;
+    padding: 1%;
+    width: 100%;
+    .poppins-standard-regular;
+
+    &::placeholder {
+      color: @ksd_ref_lm-elements;
+      letter-spacing: 0.17em;
+      .poppins-standard-regular;
+    }
+  }
+}
+
+.underlined-input-divider {
+  background:@ksd_ref_lm_gradient-horizontal-line;
+  height: 2px;
+  width: 100%;
+ 
+}

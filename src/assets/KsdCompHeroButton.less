@@ -1,0 +1,63 @@
+@import url("./preset.less");
+@import url("./mix.less");
+
+// CSS properties of hero button primary
+.hero-button-common {
+  border-radius: @ksd_ref_border_radius_small;
+  color: @ksd_ref_lm-elements;
+  cursor: pointer;
+  .ksd_sys_flex-box-centred;
+  line-height: 1.5;
+  padding: 1% 3%;
+  .poppins-fine-regular;
+  width: fit-content;
+}
+
+// CSS properties of hero button primary
+.hero-button-primary {
+  background-color: @ksd_ref_lm-bg-rear;
+  border: @ksd_ref_lm-solid-border;
+  box-shadow: @ksd_ref_bars-lower-shadow;
+ 
+
+  &:hover{
+    box-shadow: @ksd_ref_card-vertical-shadow;
+  }
+}
+// CSS properties of hero button secondary
+.hero-button-secondary {
+  background-color: @ksd_ref_lm-bg-layer;
+  border: @ksd_ref_lm-solid-border;
+  box-shadow: @ksd_ref_card-vertical-shadow;
+}
+// CSS properties of hero button tertiary
+.hero-button-tertiary {
+  background-color:transparent;
+  border: none;
+  color: @ksd_ref_dark-grey;
+  .poppins-fine-medium;
+  //CSS properties of the tertiary hero button when hovered over
+  &:hover {
+    background-color: @ksd_ref_lm-bg-layer;
+    box-shadow: @ksd_ref_card-vertical-shadow;
+  }
+  //CSS properties of the tertiary hero button when clicked on
+  &:focus,
+  :active {
+    background-color: @ksd_ref_dark-grey;
+    border: 1px solid @ksd_ref_low-white;
+    color: @ksd_ref_low-white;
+  }
+}
+// CSS properties of hero button tertiary
+.hero-button-quaternary {
+  background-color: @ksd_ref_lm-bg-layer;
+  border: 1px solid @ksd_ref_dark-grey;
+  box-shadow: @ksd_ref_bars-lower-shadow;
+}
+//CSS properties of the tertiary hero button when selected on
+#selected-button{
+  background-color: @ksd_ref_dark-grey;
+  border: 1px solid @ksd_ref_low-white;
+   color: @ksd_ref_low-white;
+}

@@ -1,0 +1,52 @@
+@import url("./preset.less");
+@import url("./mix.less");
+
+.burger-items-list {
+    background-color: transparent;
+    color: @ksd_ref_lm-elements;
+    flex-direction: column;
+    gap:11%;
+    height:stretch;
+    height: 100%;
+    list-style: none;
+    overflow-y: scroll;
+    padding: .5rem;
+    text-align: center;
+    width: 100%;
+    .ksd_sys_flex-box-AI-centred-JC-start;
+  
+    li {
+      color: @ksd_ref_lm-elements;
+      font-family: @ksd_ref_font-family_poppins;
+      font-size: 11px;
+      font-weight: @ksd_ref_font-weight-400;
+      line-height: 1.75;
+      width: 100%;
+  
+      
+    }
+  }
+
+
+  /* ===========================================MEDIA QUERY================================================= */
+
+//screens with width greater than 600 
+  
+@media (min-width:600px) {
+  .burger-items-list{ 
+    li{
+      font-size: 13px;
+    }
+  }
+}
+
+//screens with width greater than 600 
+  
+@media (max-height:350px) {
+  .burger-items-list{
+    gap:1%;
+    .ksd_sys_flex-box-AI-centred-JC-space-between;
+
+   
+  }
+}

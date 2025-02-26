@@ -1,0 +1,42 @@
+@import url("./preset.less");
+@import url("./mix.less");
+
+//css prprieties for about us container----
+.about-us-container {
+  background-color: @ksd_ref_lm-bg-layer;
+  box-shadow: @ksd_ref_bars-upper-shadow;
+  flex-direction: column;
+  gap: 5vw;
+  padding: 2.5%;
+  width: 100%;
+  .ksd_sys_flex-box-centred;
+
+  // about us paragraphe-------------
+  p {
+    color: @ksd_ref_lm-elements;
+    line-height: 2;
+    text-align: justify;
+    .montserrat-fine-regular;
+  }
+
+  .footer-paragraphe {
+    text-align: center;
+  }
+}
+
+/* ==============================MEDIA QUERRY=================================== */
+
+//width more than 750px --------
+@media (min-width: 750px) {
+  .about-us-container {
+    gap: 3vw;
+
+    h1 {
+      font-size: 1.1rem;
+    }
+
+    p {
+      font-size: 0.7rem;
+    }
+  }
+}

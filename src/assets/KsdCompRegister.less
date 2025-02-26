@@ -1,0 +1,182 @@
+@import url("./preset.less");
+@import url("./mix.less");
+
+.register-container {
+  background-color: @ksd_ref_lm-bg-layer;
+  flex-direction: column;
+  height: 100dvh;
+  width: 100%;
+  .ksd_sys_flex-box-AI-centred-JC-space-evenly;
+
+  .logo-container {
+    background-color: transparent;
+    flex-direction: column;
+    gap: 1vw;
+    width: 100%;
+    .ksd_sys_flex-box-centred;
+
+    .kwk-logo {
+      font-size: 7rem;
+    }
+
+    h1 {
+      color: @ksd_ref_lm-elements;
+      .poppins-exemplary-regular;
+    }
+  }
+
+  .inputs-container {
+    flex-direction: column;
+    min-height: 43dvh;
+    padding-inline: 5%;
+    width: 100%;
+    .ksd_sys_flex-box-AI-centred-JC-space-around;
+  }
+
+  .hero-button-common {
+    border-radius: @ksd_ref_border_radius_normal;
+    font-size: 0.9rem;
+  }
+
+  .message-container {
+    gap:.5vw;
+    width: 77%;
+    .ksd_sys_flex-box-AI-stretch-JC-center;
+
+    .icon-message {
+      font-size: 23px;
+    }
+  }
+}
+
+
+
+/* =============================== MEDIA QUERY =============================== */
+
+//width between 950px
+@media (min-width: 950px) {
+  .register-container {
+    .logo-container {
+      background-color: transparent;
+      flex-direction: column;
+      gap: 1vw;
+
+      .kwk-logo {
+        font-size: 3.5rem;
+      }
+
+      h1 {
+        font-size: 1.1rem;
+      }
+    }
+
+    .inputs-container {
+      width: 67%;
+
+      .underline-input-container {
+        .underlined-input {
+          font-size: 0.65rem;
+
+          &::placeholder {
+            font-size: 0.65rem;
+          }
+        }
+      }
+    }
+
+    .hero-button-common {
+      font-size: 0.65rem;
+    }
+
+    .message-container {
+      font-size: 0.6rem;
+      width: 61%;
+    }
+  }
+}
+
+//--------------------------------------  height ---------------------------------------
+
+//screen with height between 500 and 350 px
+@media (max-height: 500px) and (min-height: 350px) {
+  .register-container {
+    .logo-container {
+      .kwk-logo {
+        font-size: 3.5rem;
+      }
+
+      h1 {
+        font-size: 1.1rem;
+      }
+    }
+
+    .inputs-container {
+      .underline-input-container {
+        .underlined-input {
+          font-size: 0.65rem;
+
+          &::placeholder {
+            font-size: 0.65rem;
+          }
+        }
+      }
+    }
+
+    .hero-button-common {
+      font-size: 0.65rem;
+    }
+
+    .message-container {
+      font-size: 0.6rem;
+
+      .icon-message {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+//screen with height less than 350 px
+@media (max-height: 350px) {
+  .register-container {
+    .logo-container {
+      .kwk-logo {
+        font-size: 3rem;
+      }
+
+      h1 {
+        font-size: 1rem;
+      }
+    }
+
+    .inputs-container {
+      width: 67%;
+
+      .underline-input-container {
+        .underlined-input {
+          font-size: 0.6rem;
+          
+          &::placeholder {
+            font-size: 0.6rem;
+          }
+        }
+      }
+    }
+
+    .hero-button-common {
+      font-size: 0.6rem;
+    }
+
+    .message-container {
+      .ksd_sys_flex-box-AI-start-JC-center;
+      flex-direction: row;
+      font-size: 0.6rem;
+      gap: .3vw;
+      width: 61%;
+
+      .icon-confirm {
+        font-size: .9rem;
+      }
+    }
+  }
+}

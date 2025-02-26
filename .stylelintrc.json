@@ -1,0 +1,44 @@
+{
+  "processors": ["stylelint-processor-less"],
+  "extends": "stylelint-config-standard-less",
+
+  "plugins": ["stylelint-order"],
+  "customSyntax": "postcss-less",
+  "rules": {
+    "declaration-empty-line-before": null,
+    "no-extra-semicolons": null,
+
+    "order/properties-alphabetical-order": true,
+
+    "declaration-property-value-disallowed-list": {
+      "justify-content": [
+        "center",
+        "flex-start",
+        "flex-end",
+        "space-around",
+        "space-evenly"
+      ],
+      "align-items": [
+        "center",
+        "flex-start",
+        "flex-end",
+        "stretch",
+        "baseline"
+      ],
+      "display": ["flex", "bloc"],
+      "color": [
+        "red",
+        "blue",
+        "orange",
+        "black",
+        "green",
+        "purple",
+        "yellow",
+        "pink"
+      ]
+    },
+    "color-no-hex": true,
+    "color-function-notation": "legacy"
+  },
+  "ignoreFiles": ["**/*src/assets/preset.less", "**/*src/assets/mix.less"]
+}

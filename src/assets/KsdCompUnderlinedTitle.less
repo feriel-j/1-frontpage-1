@@ -1,0 +1,74 @@
+@import url("./preset.less");
+@import url("./mix.less");
+
+//css propieties for underlined-title component
+
+.underline-title {
+  color: @ksd_ref_lm-elements;
+  flex-direction: column;
+  gap: 0.5rem;
+  letter-spacing: 0.03rem;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+// left-sided variant
+.title-left-sided {
+  text-align: start;
+  .montserrat-standard-regular;
+  .ksd_sys_flex-box-AI-start-JC-center;
+  //divider------
+  .underline-title-divider {
+    background: @ksd_ref_kwk-fp-title-line;
+    height: 0.1rem;
+    width: 13rem;
+  }
+}
+
+//centred variant
+.title-centred {
+  gap: .7rem;
+  text-align: center;
+  .ksd_sys_flex-box-centred;
+  .davidLibre-striking-regular ;
+  //divider------
+  .underline-title-divider {
+    background: @ksd_ref_lm_gradient-horizontal-line;
+    height: 0.1rem;
+    width: 77%;
+  }
+}
+
+//textarea variant
+
+.title-textarea {
+  letter-spacing: 0.1rem;
+  text-align: center;
+  text-transform: capitalize;
+  .ksd_sys_flex-box-centred;
+  .poppins-moderate-regular;
+  //divider------
+  .underline-title-divider {
+    background: @ksd_ref_lm_gradient-horizontal-line;
+    height: 0.1rem;
+    width: 73%;
+  }
+}
+
+/* ==============================MEDIA QUERRY=================================== */
+
+//width more than 750px --------
+@media (min-width: 750px) {
+  // left-sided variant
+  .title-left-sided {
+    font-size: 1.1rem;
+  }
+  //centred variant
+  .title-centred {
+    font-size: 1.5rem;
+  }
+  //textarea variant
+  .title-textarea {
+    font-size: 1.1rem;
+  }
+}

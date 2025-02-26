@@ -1,0 +1,60 @@
+@import url("./preset.less");
+@import url("./mix.less");
+
+.layout-fp-kwk {
+  .ksd_sys_flex-box-centred;
+  background-color: @ksd_ref_lm-bg-rear;
+  height: 100vh;
+  overflow-x: hidden;
+  width: 100%;
+
+  .layout-navbar {
+    background-color: transparent;
+    display: none;
+   
+  }
+
+  .layout-burger {
+    .ksd_sys_flex;
+    background-color: transparent;
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+  }
+
+  .layout-main {
+    background-color: transparent;
+    height: 100%;
+    margin-left: 0;
+    width: 100%;
+
+  }
+  
+}
+
+// ===============================Media Query==================================
+
+// screen greeter than 950px (burger menu disappears)
+@media (min-width: 950px) {
+  .layout-fp-kwk {
+    .layout-navbar {
+      height: 100vh;
+      left: 0;
+      position: fixed;
+      top: 0;
+      width: 3%;
+      .ksd_sys_flex-box-AI-centred-JC-space-between;
+      
+    }
+
+    .layout-burger {
+      display: none;
+    }
+
+    .layout-main {
+      margin-left: 3%;
+      width: calc(100% - 3%);
+    }
+  }
+}

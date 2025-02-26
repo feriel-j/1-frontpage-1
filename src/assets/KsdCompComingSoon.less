@@ -1,0 +1,245 @@
+@import url("./preset.less");
+@import url("./mix.less");
+//CSS properties for comming soon
+.coming-soon-container {
+  background-image: url("@{base_url}codioful.jpg");
+  background-position: center;
+  background-size: cover;
+  flex-direction: column;
+  gap: 5vw;
+  height: 100dvh;
+  padding: 3%;
+  width: 100%;
+  .ksd_sys_flex-box-AI-centred-JC-space-between;
+
+  .coming-soon-content {
+    background-color: transparent;
+    flex-direction: column;
+    height: stretch;
+    height: 100%;
+    width: 100%;
+    .ksd_sys_flex-box-AI-centred-JC-space-around;
+
+    figure {
+      .ksd_sys_flex-box-centred;
+
+      .kwk-logo-coming-soon {
+        color: @ksd_ref_low-white;
+        filter: @ksd_ref_drops-shadow;
+        font-size: 7rem;
+      }
+    }
+
+    h1 {
+      color: @ksd_ref_low-white;
+      letter-spacing: 0.03em;
+      text-align: center;
+      text-shadow: @ksd_ref_card-vertical-shadow;
+      text-transform: uppercase;
+      .shiporiMincho-substantial-extra-bold;
+    }
+
+    h3 {
+      color: @ksd_ref_low-white;
+      line-height: 1.75;
+      padding-inline: 3%;
+      text-align: center;
+      text-shadow: @ksd_ref_card-vertical-shadow;
+      width: 100%;
+      .poppins-standard-semi-bold;
+    }
+
+    .coming-soon-btn {
+      border-radius: @ksd_ref_border_radius_medium;
+      font-size: 0.8rem;
+    }
+
+    .coming-soon-contact {
+      padding: 0;
+
+      h3 {
+        color: @ksd_ref_low-white;
+        font-size: 1rem;
+        text-shadow: @ksd_ref_card-vertical-shadow;
+      }
+
+      h4,
+      p {
+        color: @ksd_ref_low-white;
+        font-size: 0.65rem;
+        text-shadow: @ksd_ref_card-vertical-shadow;
+      }
+
+      svg {
+        color: @ksd_ref_low-white;
+        font-size: 1.2rem;
+        text-shadow: @ksd_ref_card-vertical-shadow;
+      }
+    }
+  }
+
+  .coming-soon-footer {
+    font-size: 0.65rem;
+  }
+}
+
+/* =============================== MEDIA QUERY =============================== */
+
+//width between 950px
+@media (min-width: 950px) {
+  .coming-soon-container {
+    gap: 0;
+    padding: 1%;
+
+    .coming-soon-content {
+      gap: 1.5vw;
+
+      figure {
+        .kwk-logo-coming-soon {
+          font-size: 5rem;
+        }
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      h3 {
+        font-size: 0.7rem;
+        width: 77%;
+      }
+
+      .coming-soon-btn {
+        border-radius: @ksd_ref_border_radius_normal;
+        font-size: 0.6rem;
+        padding: 1% 2%;
+      }
+
+      .coming-soon-contact {
+        & > * {
+          gap: 1vw;
+        }
+
+        h3 {
+          font-size: 0.8rem;
+        }
+
+        h4,
+        p {
+          font-size: 0.6rem;
+        }
+
+        svg {
+          font-size: 0.75rem;
+        }
+      }
+    }
+
+    .coming-soon-footer {
+      font-size: 0.65rem;
+    }
+  }
+}
+
+//--------------------------------------  height ---------------------------------------
+
+//screen with height between 500 and 350 px
+@media (max-height: 500px) and (min-height: 350px) {
+  .coming-soon-container {
+    gap: 1vw;
+
+    .coming-soon-content {
+      figure {
+        .kwk-logo-coming-soon {
+          font-size: 5rem;
+        }
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      h3 {
+        font-size: 0.8rem;
+      }
+
+      .coming-soon-btn {
+        border-radius: @ksd_ref_border_radius_medium;
+        font-size: 0.7rem;
+      }
+
+      .coming-soon-contact {
+        h3 {
+          font-size: 0.9rem;
+        }
+
+        h4,
+        p {
+          font-size: 0.55rem;
+        }
+
+        svg {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .coming-soon-footer {
+      font-size: 0.55rem;
+    }
+  }
+}
+
+//screen with height less than 350 px
+@media (max-height: 350px) {
+  .coming-soon-container {
+    gap: 0;
+
+    .coming-soon-content {
+      gap: 1.5vw;
+
+      figure {
+        .kwk-logo-coming-soon {
+          font-size: 4rem;
+        }
+      }
+
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      h3 {
+        font-size: 0.6rem;
+      }
+
+      .coming-soon-btn {
+        border-radius: @ksd_ref_border_radius_medium;
+        font-size: 0.55rem;
+        padding: 1% 1.5%;
+      }
+
+      .coming-soon-contact {
+        & > * {
+          gap: 1vw;
+        }
+
+        h3 {
+          font-size: 0.8rem;
+        }
+
+        h4,
+        p {
+          font-size: 0.5rem;
+        }
+
+        svg {
+          font-size: 0.75rem;
+        }
+      }
+    }
+
+    .coming-soon-footer {
+      font-size: 0.5rem;
+    }
+  }
+}
